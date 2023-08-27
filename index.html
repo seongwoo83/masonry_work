@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모니터링 화면</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/jquery-3.7.0.min.js"></script>
+    <script src="./js/unpkg.com_masonry-layout@4.2.2_dist_masonry.pkgd.min.js"></script>
+    <script src="./js/index.js"></script>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="wrapper">
+        <div class="wrapper_inner">
+            <div class="left_wrap">
+                <div class="header_wrap">
+                    <div class="img_wrap"></div>
+                    <div class="main_title">실시간 모니터</div>
+                </div>
+                <div class="select_wrap">
+                    <div class="depth_wrap">
+                        <div class="sub_title">Depth 1</div>
+                        <div class="select_box">
+                            <div class="label">All</div>
+                            <ul class="option_list">
+                                <li class="option_item">All</li>
+                                <li class="option_item">Option 1</li>
+                                <li class="option_item">Option 2</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="depth_wrap">
+                        <div class="sub_title">Depth 2</div>
+                        <div class="select_box">
+                            <div class="label">All</div>
+                            <ul class="option_list">
+                                <li class="option_item">All</li>
+                                <li class="option_item">Option 1</li>
+                                <li class="option_item">Option 2</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="depth_wrap">
+                        <div class="sub_title">Depth 3</div>
+                        <div class="select_box">
+                            <div class="label">All</div>
+                            <ul class="option_list">
+                                <li class="option_item">All</li>
+                                <li class="option_item">Option 1</li>
+                                <li class="option_item">Option 2</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="box_wrap">
+                    <div class="box_container masonry">
+                        <div class="masonry_sizer"></div>
+                        <div class="gutter_sizer"></div>
+                        <div class="box">
+                            <div class="box_title">B5-3 (PU-1204S)</div>
+                            <ul class="product_list_container devide_list">
+                                <li class="product_list produce">
+                                    <div class="product_title">생산 - 2</div>
+                                    <div class="product_desc">
+                                        <div class="product_date">2023-08-14</div>
+                                        <div class="product_time">09:28:51.0</div>
+                                    </div>
+                                </li>
+                                <li class="product_list electric">
+                                    <div class="product_title">전기 - 99</div>
+                                    <div class="product_desc">
+                                        <div class="product_date">2023-08-14</div>
+                                        <div class="product_time">09:28:51.0</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="box">
+                            <div class="box_title">K7-1 (PU-1204S)</div>
+                            <ul class="product_list_container devide_list">
+                                <li class="product_list produce">
+                                    <div class="product_title">생산 - 2</div>
+                                    <div class="product_desc">
+                                        <div class="product_date">2023-08-14</div>
+                                        <div class="product_time">09:28:51.0</div>
+                                    </div>
+                                </li>
+                                <li class="product_list electric">
+                                    <div class="product_title">전기 - 99</div>
+                                    <div class="product_desc">
+                                        <div class="product_date">2023-08-14</div>
+                                        <div class="product_time">09:28:51.0</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="box">
+                            <div class="box_title">B5-3 (PU-1204S)</div>
+                            <ul class="product_list_container full_list">
+                                <li class="product_list produce">
+                                    <div class="product_title">생산 - 2</div>
+                                    <div class="product_desc">
+                                        <div class="product_date">2023-08-14</div>
+                                        <div class="product_time">09:28:51.0</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="box">
+                            <div class="box_title">A16-2 (PU-1921A)</div>
+                            <ul class="product_list_container full_list">
+                                <li class="product_list electric">
+                                    <div class="product_title">전기 - 99</div>
+                                    <div class="product_desc">
+                                        <div class="product_date">2023-08-14</div>
+                                        <div class="product_time">09:28:51.0</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="box">
+                            <div class="box_title">B5-3 (PU-1204S)</div>
+                            <ul class="product_list_container devide_list">
+                                <li class="product_list produce">
+                                    <div class="product_title">생산 - 2</div>
+                                    <div class="product_desc">
+                                        <div class="product_date">2023-08-14</div>
+                                        <div class="product_time">09:28:51.0</div>
+                                    </div>
+                                </li>
+                                <li class="product_list produce">
+                                    <div class="product_title">생산 - 3</div>
+                                    <div class="product_desc">
+                                        <div class="product_date">2023-08-14</div>
+                                        <div class="product_time">09:28:51.0</div>
+                                    </div>
+                                </li>
+                                <li class="product_list electric">
+                                    <div class="product_title">전기 - 99</div>
+                                    <div class="product_desc">
+                                        <div class="product_date">2023-08-14</div>
+                                        <div class="product_time">09:28:51.0</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="box">
+                            <div class="box_title">B5-3 (PU-1204S)</div>
+                            <ul class="product_list_container full_list">
+                                <li class="product_list produce">
+                                    <div class="product_title">생산 - 2</div>
+                                    <div class="product_desc">
+                                        <div class="product_date">2023-08-14</div>
+                                        <div class="product_time">09:28:51.0</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="box">
+                            <div class="box_title">A16-2 (PU-1921A)</div>
+                            <ul class="product_list_container full_list">
+                                <li class="product_list electric">
+                                    <div class="product_title">전기 - 99</div>
+                                    <div class="product_desc">
+                                        <div class="product_date">2023-08-14</div>
+                                        <div class="product_time">09:28:51.0</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="box">
+                            <div class="box_title">B5-3 (PU-1204S)</div>
+                            <ul class="product_list_container devide_list">
+                                <li class="product_list produce">
+                                    <div class="product_title">생산 - 2</div>
+                                    <div class="product_desc">
+                                        <div class="product_date">2023-08-14</div>
+                                        <div class="product_time">09:28:51.0</div>
+                                    </div>
+                                </li>
+                                <li class="product_list produce">
+                                    <div class="product_title">생산 - 3</div>
+                                    <div class="product_desc">
+                                        <div class="product_date">2023-08-14</div>
+                                        <div class="product_time">09:28:51.0</div>
+                                    </div>
+                                </li>
+                                <li class="product_list electric">
+                                    <div class="product_title">전기 - 99</div>
+                                    <div class="product_desc">
+                                        <div class="product_date">2023-08-14</div>
+                                        <div class="product_time">09:28:51.0</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="box">
+                            <div class="box_title">B5-3 (PU-1204S)</div>
+                            <ul class="product_list_container devide_list">
+                                <li class="product_list produce">
+                                    <div class="product_title">생산 - 2</div>
+                                    <div class="product_desc">
+                                        <div class="product_date">2023-08-14</div>
+                                        <div class="product_time">09:28:51.0</div>
+                                    </div>
+                                </li>
+                                <li class="product_list electric">
+                                    <div class="product_title">전기 - 99</div>
+                                    <div class="product_desc">
+                                        <div class="product_date">2023-08-14</div>
+                                        <div class="product_time">09:28:51.0</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="box">
+                            <div class="box_title">K7-1 (PU-1204S)</div>
+                            <ul class="product_list_container devide_list">
+                                <li class="product_list produce">
+                                    <div class="product_title">생산 - 2</div>
+                                    <div class="product_desc">
+                                        <div class="product_date">2023-08-14</div>
+                                        <div class="product_time">09:28:51.0</div>
+                                    </div>
+                                </li>
+                                <li class="product_list electric">
+                                    <div class="product_title">전기 - 99</div>
+                                    <div class="product_desc">
+                                        <div class="product_date">2023-08-14</div>
+                                        <div class="product_time">09:28:51.0</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="box">
+                            <div class="box_title">A16-2 (PU-1921A)</div>
+                            <ul class="product_list_container full_list">
+                                <li class="product_list electric">
+                                    <div class="product_title">전기 - 99</div>
+                                    <div class="product_desc">
+                                        <div class="product_date">2023-08-14</div>
+                                        <div class="product_time">09:28:51.0</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="box">
+                            <div class="box_title">B5-3 (PU-1204S)</div>
+                            <ul class="product_list_container devide_list">
+                                <li class="product_list produce">
+                                    <div class="product_title">생산 - 2</div>
+                                    <div class="product_desc">
+                                        <div class="product_date">2023-08-14</div>
+                                        <div class="product_time">09:28:51.0</div>
+                                    </div>
+                                </li>
+                                <li class="product_list produce">
+                                    <div class="product_title">생산 - 3</div>
+                                    <div class="product_desc">
+                                        <div class="product_date">2023-08-14</div>
+                                        <div class="product_time">09:28:51.0</div>
+                                    </div>
+                                </li>
+                                <li class="product_list electric">
+                                    <div class="product_title">전기 - 99</div>
+                                    <div class="product_desc">
+                                        <div class="product_date">2023-08-14</div>
+                                        <div class="product_time">09:28:51.0</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="box">
+                            <div class="box_title">B5-3 (PU-1204S)</div>
+                            <ul class="product_list_container devide_list">
+                                <li class="product_list produce">
+                                    <div class="product_title">생산 - 2</div>
+                                    <div class="product_desc">
+                                        <div class="product_date">2023-08-14</div>
+                                        <div class="product_time">09:28:51.0</div>
+                                    </div>
+                                </li>
+                                <li class="product_list produce">
+                                    <div class="product_title">생산 - 3</div>
+                                    <div class="product_desc">
+                                        <div class="product_date">2023-08-14</div>
+                                        <div class="product_time">09:28:51.0</div>
+                                    </div>
+                                </li>
+                                <li class="product_list electric">
+                                    <div class="product_title">전기 - 99</div>
+                                    <div class="product_desc">
+                                        <div class="product_date">2023-08-14</div>
+                                        <div class="product_time">09:28:51.0</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="box">
+                            <div class="box_title">B5-3 (PU-1204S)</div>
+                            <ul class="product_list_container full_list">
+                                <li class="product_list produce">
+                                    <div class="product_title">생산 - 2</div>
+                                    <div class="product_desc">
+                                        <div class="product_date">2023-08-14</div>
+                                        <div class="product_time">09:28:51.0</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="box">
+                            <div class="box_title">A16-2 (PU-1921A)</div>
+                            <ul class="product_list_container full_list">
+                                <li class="product_list electric">
+                                    <div class="product_title">전기 - 99</div>
+                                    <div class="product_desc">
+                                        <div class="product_date">2023-08-14</div>
+                                        <div class="product_time">09:28:51.0</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right_wrap">
+                <div class="header_wrap">
+                    <div class="img_wrap"></div>
+                    <div class="main_title">Access 현재 상황</div>
+                </div>
+                <div class="box_wrap">
+                    <div class="cnt_wrap">
+                        <div class="total_wrap">
+                            <div class="wrap_title">총 Lock 개수</div>
+                            <div class="wrap_cnt">106</div>
+                        </div>
+                        <div class="engage_wrap">
+                            <div class="wrap_title">체결 수량</div>
+                            <div class="wrap_cnt">6</div>
+                        </div>
+                        <div class="unuse_wrap">
+                            <div class="wrap_title">미사용</div>
+                            <div class="wrap_cnt">100</div>
+                        </div>
+                    </div>
+                    <div class="list_wrap">
+                        <ul class="manage_list_container">
+                            <li class="manage_list">
+                                <table class="list_table produce_table">
+                                    <colgroup>
+                                        <col>
+                                        <col>
+                                    </colgroup>
+                                    <tr class="lock_value">
+                                        <td class="value_title">Lock</td>
+                                        <td class="value_desc important">생산 - 40</td>
+                                    </tr>
+                                    <tr class="purpose_value">
+                                        <td class="value_title">목적물</td>
+                                        <td class="value_desc important">K7-2 (PU-1692S)</td>
+                                    </tr>
+                                    <tr class="key_value">
+                                        <td class="value_title">Key</td>
+                                        <td class="value_desc">
+                                            <span class="name">정형관</span>
+                                            <span>/</span>
+                                            <span class="team">VCM 생산 1팀</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="date_value">
+                                        <td class="value_title">작업날짜</td>
+                                        <td class="value_desc">
+                                            <span class="value_date">2023-08-14</span>
+                                            <span class="value_time">09:28:51.0</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </li>
+                            <li class="manage_list">
+                                <table class="list_table electric_table">
+                                    <tbody>
+                                        <colgroup>
+                                            <col>
+                                            <col>
+                                        </colgroup>
+                                        <tr class="lock_value">
+                                            <td class="value_title">Lock</td>
+                                            <td class="value_desc important">전기 - 99</td>
+                                        </tr>
+                                        <tr class="purpose_value">
+                                            <td class="value_title">목적물</td>
+                                            <td class="value_desc important">K7-2 (PU-1692S)</td>
+                                        </tr>
+                                        <tr class="key_value">
+                                            <td class="value_title">Key</td>
+                                            <td class="value_desc">
+                                                <span class="name">정형관</span>
+                                                <span>/</span>
+                                                <span class="team">VCM 생산 1팀</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="date_value">
+                                            <td class="value_title">작업날짜</td>
+                                            <td class="value_desc">
+                                                <span class="value_date">2023-08-14</span>
+                                                <span class="value_time">09:28:51.0</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                            <li class="manage_list">
+                                <table class="list_table produce_table">
+                                    <tbody>
+                                        <colgroup>
+                                            <col>
+                                            <col>
+                                        </colgroup>
+                                        <tr class="lock_value">
+                                            <td class="value_title">Lock</td>
+                                            <td class="value_desc important">생산 - 3</td>
+                                        </tr>
+                                        <tr class="purpose_value">
+                                            <td class="value_title">목적물</td>
+                                            <td class="value_desc important">K7-2 (PU-1692S)</td>
+                                        </tr>
+                                        <tr class="key_value">
+                                            <td class="value_title">Key</td>
+                                            <td class="value_desc">
+                                                <span class="name">정형관</span>
+                                                <span>/</span>
+                                                <span class="team">VCM 생산 1팀</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="date_value">
+                                            <td class="value_title">작업날짜</td>
+                                            <td class="value_desc">
+                                                <span class="value_date">2023-08-14</span>
+                                                <span class="value_time">09:28:51.0</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                            <li class="manage_list">
+                                <table class="list_table electric_table">
+                                    <tbody>
+                                        <colgroup>
+                                            <col>
+                                            <col>
+                                        </colgroup>
+                                        <tr class="lock_value">
+                                            <td class="value_title">Lock</td>
+                                            <td class="value_desc important">전기 - 102</td>
+                                        </tr>
+                                        <tr class="purpose_value">
+                                            <td class="value_title">목적물</td>
+                                            <td class="value_desc important">K7-2 (PU-1692S)</td>
+                                        </tr>
+                                        <tr class="key_value">
+                                            <td class="value_title">Key</td>
+                                            <td class="value_desc">
+                                                <span class="name">정형관</span>
+                                                <span>/</span>
+                                                <span class="team">VCM 생산 1팀</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="date_value">
+                                            <td class="value_title">작업날짜</td>
+                                            <td class="value_desc">
+                                                <span class="value_date">2023-08-14</span>
+                                                <span class="value_time">09:28:51.0</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                            <li class="manage_list">
+                                <table class="list_table produce_table">
+                                    <tbody>
+                                        <colgroup>
+                                            <col>
+                                            <col>
+                                        </colgroup>
+                                        <tr class="lock_value">
+                                            <td class="value_title">Lock</td>
+                                            <td class="value_desc important">생산 - 2</td>
+                                        </tr>
+                                        <tr class="purpose_value">
+                                            <td class="value_title">목적물</td>
+                                            <td class="value_desc important">K7-2 (PU-1692S)</td>
+                                        </tr>
+                                        <tr class="key_value">
+                                            <td class="value_title">Key</td>
+                                            <td class="value_desc">
+                                                <span class="name">정형관</span>
+                                                <span>/</span>
+                                                <span class="team">VCM 생산 1팀</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="date_value">
+                                            <td class="value_title">작업날짜</td>
+                                            <td class="value_desc">
+                                                <span class="value_date">2023-08-14</span>
+                                                <span class="value_time">09:28:51.0</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                            <li class="manage_list">
+                                <table class="list_table produce_table">
+                                    <tbody>
+                                        <colgroup>
+                                            <col>
+                                            <col>
+                                        </colgroup>
+                                        <tr class="lock_value">
+                                            <td class="value_title">Lock</td>
+                                            <td class="value_desc important">생산 - 1</td>
+                                        </tr>
+                                        <tr class="purpose_value">
+                                            <td class="value_title">목적물</td>
+                                            <td class="value_desc important">K7-2 (PU-1692S)</td>
+                                        </tr>
+                                        <tr class="key_value">
+                                            <td class="value_title">Key</td>
+                                            <td class="value_desc">
+                                                <span class="name">정형관</span>
+                                                <span>/</span>
+                                                <span class="team">VCM 생산 1팀</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="date_value">
+                                            <td class="value_title">작업날짜</td>
+                                            <td class="value_desc">
+                                                <span class="value_date">2023-08-14</span>
+                                                <span class="value_time">09:28:51.0</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="circle cir1"></div>
+    <div class="circle cir2"></div>
+</body>
+</html>
